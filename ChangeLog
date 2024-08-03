@@ -1,3 +1,14 @@
+version 1.5.1 (8/3/2024)
+- added patches to build and run on Linux and MacOS
+- fixed wprintw usage (highlighted by ncurses 6.5)
+- fixed the use of uninitialised pointer in ispell_op
+- removed locally added __FBSDID
+- removed two set but unused variables
+- use C89 function definitions
+- removed function prototype for main
+- droped P_() macro used for pre-C89 compatibility
+- added make deinstall and mkdir ${PREFIX}/bin
+
 version 1.5.0 (2/16/2009)
 - added display of line number, column, and lines from top to separator line 
   for info window

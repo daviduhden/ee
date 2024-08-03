@@ -32,9 +32,6 @@
  |      ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  |      POSSIBILITY OF SUCH DAMAGE.
  |
- |
- |	All are rights reserved.
- |
  */
 
 #include <stdio.h>

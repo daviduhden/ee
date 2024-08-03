@@ -32,9 +32,6 @@
  |      ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  |      POSSIBILITY OF SUCH DAMAGE.
  |
- |
- |	All are rights reserved.
- |
  |	$Header: /home/hugh/sources/old_ae/RCS/new_curse.c,v 1.54 2002/09/21 00:47:14 hugh Exp $
  |
  */
