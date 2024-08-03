@@ -17,8 +17,8 @@ version 1.5.0 (2/16/2009)
 version 1.4.7 (2/10/2009)
 - changed how strings are terminated from the old usage of NULL to the current 
   use of character zero, '\0'
-- changed the licensing since the Artistic License is now considered 
-  restrictive
+- changed the program license from the Artistic license to 
+  the simplified BSD license
 
 version 1.4.6
 - modified new_curse.c to handle different subdirectory naming in terminfo 
