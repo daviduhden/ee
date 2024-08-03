@@ -5,7 +5,6 @@
  |
  |	written by Hugh Mahon
  |
- |
  |      Copyright (c) 2009, Hugh Mahon
  |      All rights reserved.
  |      

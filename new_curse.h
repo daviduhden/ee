@@ -5,36 +5,34 @@
  |
  |	written by Hugh Mahon
  |
- |	THIS MATERIAL IS PROVIDED "AS IS".  THERE ARE
- |	NO WARRANTIES OF ANY KIND WITH REGARD TO THIS
- |	MATERIAL, INCLUDING, BUT NOT LIMITED TO, THE
- |	IMPLIED WARRANTIES OF MERCHANTABILITY AND
- |	FITNESS FOR A PARTICULAR PURPOSE.  Neither
- |	Hewlett-Packard nor Hugh Mahon shall be liable
- |	for errors contained herein, nor for
- |	incidental or consequential damages in
- |	connection with the furnishing, performance or
- |	use of this material.  Neither Hewlett-Packard
- |	nor Hugh Mahon assumes any responsibility for
- |	the use or reliability of this software or
- |	documentation.  This software and
- |	documentation is totally UNSUPPORTED.  There
- |	is no support contract available.  Hewlett-
- |	Packard has done NO Quality Assurance on ANY
- |	of the program or documentation.  You may find
- |	the quality of the materials inferior to
- |	supported materials.
+ |      Copyright (c) 1986, 1987, 1988, 1991, 1995 Hugh Mahon
+ |      All rights reserved.
  |
- |	This software is not a product of Hewlett-Packard, Co., or any 
- |	other company.  No support is implied or offered with this software.
- |	You've got the source, and you're on your own.
+ |      Redistribution and use in source and binary forms, with or without
+ |      modification, are permitted provided that the following conditions
+ |      are met:
  |
- |	This software may be distributed under the terms of Larry Wall's 
- |	Artistic license, a copy of which is included in this distribution. 
+ |          * Redistributions of source code must retain the above copyright
+ |            notice, this list of conditions and the following disclaimer.
+ |          * Redistributions in binary form must reproduce the above
+ |            copyright notice, this list of conditions and the following
+ |            disclaimer in the documentation and/or other materials provided
+ |            with the distribution.
  |
- |	This notice must be included with this software and any derivatives.
+ |      THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ |      "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ |      LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+ |      FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+ |      COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+ |      INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+ |      BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ |      LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+ |      CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ |      LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
+ |      ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ |      POSSIBILITY OF SUCH DAMAGE.
  |
- |	Copyright (c) 1986, 1987, 1988, 1991, 1995 Hugh Mahon
+ |
  |	All are rights reserved.
  |
  */
