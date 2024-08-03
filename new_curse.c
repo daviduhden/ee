@@ -32,8 +32,6 @@
  |      ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  |      POSSIBILITY OF SUCH DAMAGE.
  |
- |	$Header: /home/hugh/sources/old_ae/RCS/new_curse.c,v 1.54 2002/09/21 00:47:14 hugh Exp $
- |
  */
 
 char *copyright_message[] = { "Copyright (c) 1986, 1987, 1988, 1991, 1992, 1993, 1994, 1995, 2009 Hugh Mahon",
@@ -423,39 +421,39 @@ WINDOW *last_window_refreshed;
 
 #ifdef CAP
 char *Boolean_names[] = {
-"bw", "am", "xb", "xs", "xn", "eo", "gn", "hc", "km", "hs", "in", "da", "db",
+"bw", "am", "xb", "xs", "xn", "eo", "gn", "hc", "km", "hs", "in", "da", "db", 
 "mi", "ms", "os", "es", "xt", "hz", "ul", "xo", "HC", "nx", "NR", "NP", "5i"
-};
+}; 
 
-char *Number_names[] = {
+char *Number_names[] = { 
 "co#", "it#", "li#", "lm#", "sg#", "pb#", "vt#", "ws#", "Nl#", "lh#", "lw#"
 };
 
 char *String_names[] = {
-"bt=", "bl=", "cr=", "cs=", "ct=", "cl=", "ce=", "cd=", "ch=", "CC=", "cm=",
-"do=", "ho=", "vi=", "le=", "CM=", "ve=", "nd=", "ll=", "up=", "vs=", "dc=",
-"dl=", "ds=", "hd=", "as=", "mb=", "md=", "ti=", "dm=", "mh=", "im=", "mk=",
-"mp=", "mr=", "so=", "us=", "ec=", "ae=", "me=", "te=", "ed=", "ei=", "se=",
-"ue=", "vb=", "ff=", "fs=", "i1=", "i2=", "i3=", "if=", "ic=", "al=", "ip=",
-"kb=", "ka=", "kC=", "kt=", "kD=", "kL=", "kd=", "kM=", "kE=", "kS=", "k0=",
-"k1=", "k;=", "k2=", "k3=", "k4=", "k5=", "k6=", "k7=", "k8=", "k9=", "kh=",
-"kI=", "kA=", "kl=", "kH=", "kN=", "kP=", "kr=", "kF=", "kR=", "kT=", "ku=",
-"ke=", "ks=", "l0=", "l1=", "la=", "l2=", "l3=", "l4=", "l5=", "l6=", "l7=",
-"l8=", "l9=", "mo=", "mm=", "nw=", "pc=", "DC=", "DL=", "DO=", "IC=", "SF=",
-"AL=", "LE=", "RI=", "SR=", "UP=", "pk=", "pl=", "px=", "ps=", "pf=", "po=",
-"rp=", "r1=", "r2=", "r3=", "rf=", "rc=", "cv=", "sc=", "sf=", "sr=", "sa=",
-"st=", "wi=", "ta=", "ts=", "uc=", "hu=", "iP=", "K1=", "K3=", "K2=", "K4=",
-"K5=", "pO=", "rP=", "ac=", "pn=", "kB=", "SX=", "RX=", "SA=", "RA=", "XN=",
-"XF=", "eA=", "LO=", "LF=", "@1=", "@2=", "@3=", "@4=", "@5=", "@6=", "@7=",
-"@8=", "@9=", "@0=", "%1=", "%2=", "%3=", "%4=", "%5=", "%6=", "%7=", "%8=",
-"%9=", "%0=", "&1=", "&2=", "&3=", "&4=", "&5=", "&6=", "&7=", "&8=", "&9=",
-"&0=", "*1=", "*2=", "*3=", "*4=", "*5=", "*6=", "*7=", "*8=", "*9=", "*0=",
-"#1=", "#2=", "#3=", "#4=", "%a=", "%b=", "%c=", "%d=", "%e=", "%f=", "%g=",
-"%h=", "%i=", "%j=", "!1=", "!2=", "!3=", "RF=", "F1=", "F2=", "F3=", "F4=",
-"F5=", "F6=", "F7=", "F8=", "F9=", "FA=", "FB=", "FC=", "FD=", "FE=", "FF=",
-"FG=", "FH=", "FI=", "FJ=", "FK=", "FL=", "FM=", "FN=", "FO=", "FP=", "FQ=",
-"FR=", "FS=", "FT=", "FU=", "FV=", "FW=", "FX=", "FY=", "FZ=", "Fa=", "Fb=",
-"Fc=", "Fd=", "Fe=", "Ff=", "Fg=", "Fh=", "Fi=", "Fj=", "Fk=", "Fl=", "Fm=",
+"bt=", "bl=", "cr=", "cs=", "ct=", "cl=", "ce=", "cd=", "ch=", "CC=", "cm=", 
+"do=", "ho=", "vi=", "le=", "CM=", "ve=", "nd=", "ll=", "up=", "vs=", "dc=", 
+"dl=", "ds=", "hd=", "as=", "mb=", "md=", "ti=", "dm=", "mh=", "im=", "mk=", 
+"mp=", "mr=", "so=", "us=", "ec=", "ae=", "me=", "te=", "ed=", "ei=", "se=", 
+"ue=", "vb=", "ff=", "fs=", "i1=", "i2=", "i3=", "if=", "ic=", "al=", "ip=", 
+"kb=", "ka=", "kC=", "kt=", "kD=", "kL=", "kd=", "kM=", "kE=", "kS=", "k0=", 
+"k1=", "k;=", "k2=", "k3=", "k4=", "k5=", "k6=", "k7=", "k8=", "k9=", "kh=", 
+"kI=", "kA=", "kl=", "kH=", "kN=", "kP=", "kr=", "kF=", "kR=", "kT=", "ku=", 
+"ke=", "ks=", "l0=", "l1=", "la=", "l2=", "l3=", "l4=", "l5=", "l6=", "l7=", 
+"l8=", "l9=", "mo=", "mm=", "nw=", "pc=", "DC=", "DL=", "DO=", "IC=", "SF=", 
+"AL=", "LE=", "RI=", "SR=", "UP=", "pk=", "pl=", "px=", "ps=", "pf=", "po=", 
+"rp=", "r1=", "r2=", "r3=", "rf=", "rc=", "cv=", "sc=", "sf=", "sr=", "sa=", 
+"st=", "wi=", "ta=", "ts=", "uc=", "hu=", "iP=", "K1=", "K3=", "K2=", "K4=", 
+"K5=", "pO=", "rP=", "ac=", "pn=", "kB=", "SX=", "RX=", "SA=", "RA=", "XN=", 
+"XF=", "eA=", "LO=", "LF=", "@1=", "@2=", "@3=", "@4=", "@5=", "@6=", "@7=", 
+"@8=", "@9=", "@0=", "%1=", "%2=", "%3=", "%4=", "%5=", "%6=", "%7=", "%8=", 
+"%9=", "%0=", "&1=", "&2=", "&3=", "&4=", "&5=", "&6=", "&7=", "&8=", "&9=", 
+"&0=", "*1=", "*2=", "*3=", "*4=", "*5=", "*6=", "*7=", "*8=", "*9=", "*0=", 
+"#1=", "#2=", "#3=", "#4=", "%a=", "%b=", "%c=", "%d=", "%e=", "%f=", "%g=", 
+"%h=", "%i=", "%j=", "!1=", "!2=", "!3=", "RF=", "F1=", "F2=", "F3=", "F4=", 
+"F5=", "F6=", "F7=", "F8=", "F9=", "FA=", "FB=", "FC=", "FD=", "FE=", "FF=", 
+"FG=", "FH=", "FI=", "FJ=", "FK=", "FL=", "FM=", "FN=", "FO=", "FP=", "FQ=", 
+"FR=", "FS=", "FT=", "FU=", "FV=", "FW=", "FX=", "FY=", "FZ=", "Fa=", "Fb=", 
+"Fc=", "Fd=", "Fe=", "Ff=", "Fg=", "Fh=", "Fi=", "Fj=", "Fk=", "Fl=", "Fm=", 
 "Fn=", "Fo=", "Fp=", "Fq=", "Fr=", "cb=", "MC=", "ML=", "MR="
 };
 #endif
@@ -500,7 +498,7 @@ char *Strings;
 
 #if !defined(TERMCAP)
 #define TERMCAP "/etc/termcap"
-#endif
+#endif 
 
 struct KEYS {
 	int length;	/* length of string sent by key			*/
@@ -518,13 +516,13 @@ struct KEY_STACK *KEY_POINT;
 
 /*
  |
- |	Not all systems have good terminal information, so we will define
- |	keyboard information here for the most widely used terminal type,
+ |	Not all systems have good terminal information, so we will define 
+ |	keyboard information here for the most widely used terminal type, 
  |	the VT100.
  |
  */
 
-struct KEYS vt100[] =
+struct KEYS vt100[] = 
 	{
 		{ 3, "\033[A", 0403 },	/* key up 	*/
 		{ 3, "\033[C", 0405 },	/* key right	*/
@@ -568,7 +566,7 @@ struct KEYS vt100[] =
 		{ 3, "\033[n", 0540 },	/* kc3 lower-right of keypad	*/
 
 		/*
-		 |	The following are the same keys as above, but with
+		 |	The following are the same keys as above, but with 
 		 |	a different character following the escape char.
 		 */
 
@@ -621,19 +619,19 @@ struct Parameters {
 	struct Parameters *next;
 	};
 
-int Key_vals[] = {
-	0407, 0526, 0515, 0525, 0512, 0510, 0402, 0514, 0517, 0516, 0410, 0411,
-	0422, 0412, 0413, 0414, 0415, 0416, 0417, 0420, 0421, 0406, 0513, 0511,
-	0404, 0533, 0522, 0523, 0405, 0520, 0521, 0524, 0403,
-	0534, 0535, 0536, 0537, 0540, 0541, 0542, 0543, 0544, 0545, 0546, 0547,
-	0550, 0527, 0551, 0552, 0553, 0554, 0555, 0556, 0557, 0560, 0561, 0562,
-	0532, 0563, 0564, 0565, 0566, 0567, 0570, 0571, 0627, 0630, 0572, 0573,
-	0574, 0575, 0576, 0577, 0600, 0601, 0602, 0603, 0604, 0605, 0606, 0607,
-	0610, 0611, 0612, 0613, 0614, 0615, 0616, 0617, 0620, 0621, 0622, 0623,
-	0624, 0625, 0626, 0423, 0424, 0425, 0426, 0427, 0430, 0431,
-	0432, 0433, 0434, 0435, 0436, 0437, 0440, 0441, 0442, 0443, 0444, 0445,
-	0446, 0447, 0450, 0451, 0452, 0453, 0454, 0455, 0456, 0457, 0460, 0461,
-	0462, 0463, 0464, 0465, 0466, 0467, 0470, 0471, 0472, 0473, 0474, 0475,
+int Key_vals[] = { 
+	0407, 0526, 0515, 0525, 0512, 0510, 0402, 0514, 0517, 0516, 0410, 0411, 
+	0422, 0412, 0413, 0414, 0415, 0416, 0417, 0420, 0421, 0406, 0513, 0511, 
+	0404, 0533, 0522, 0523, 0405, 0520, 0521, 0524, 0403, 
+	0534, 0535, 0536, 0537, 0540, 0541, 0542, 0543, 0544, 0545, 0546, 0547, 
+	0550, 0527, 0551, 0552, 0553, 0554, 0555, 0556, 0557, 0560, 0561, 0562, 
+	0532, 0563, 0564, 0565, 0566, 0567, 0570, 0571, 0627, 0630, 0572, 0573, 
+	0574, 0575, 0576, 0577, 0600, 0601, 0602, 0603, 0604, 0605, 0606, 0607, 
+	0610, 0611, 0612, 0613, 0614, 0615, 0616, 0617, 0620, 0621, 0622, 0623, 
+	0624, 0625, 0626, 0423, 0424, 0425, 0426, 0427, 0430, 0431, 
+	0432, 0433, 0434, 0435, 0436, 0437, 0440, 0441, 0442, 0443, 0444, 0445, 
+	0446, 0447, 0450, 0451, 0452, 0453, 0454, 0455, 0456, 0457, 0460, 0461, 
+	0462, 0463, 0464, 0465, 0466, 0467, 0470, 0471, 0472, 0473, 0474, 0475, 
 	0476, 0477, 0500, 0501, 0502, 0503, 0504, 0505, 0506, 0507
 };
 
@@ -651,7 +649,7 @@ struct sgttyb Saved_tty;
 
 char *tc_;
 
-int Booleans[128];
+int Booleans[128];	
 int Numbers[128];
 char *String_table[1024];
 
@@ -660,10 +658,10 @@ int *virtual_lines;
 static char nc_scrolling_ability = FALSE;
 
 char *terminfo_path[] = {
-        "/usr/lib/terminfo",
-        "/usr/share/lib/terminfo",
-        "/usr/share/terminfo",
-        NULL
+        "/usr/lib/terminfo", 
+        "/usr/share/lib/terminfo", 
+        "/usr/share/terminfo", 
+        NULL 
         };
 
 #ifdef CAP
@@ -698,7 +696,7 @@ FILE *fopen();			/* declaration for open function	*/
  |	Copy the contents of one window to another.
  */
 
-void
+void 
 copy_window(origin, destination)
 WINDOW *origin, *destination;
 {
@@ -708,12 +706,12 @@ WINDOW *origin, *destination;
 	orig = origin->first_line;
 	dest = destination->first_line;
 
-	for (row = 0;
-		row < (min(origin->Num_lines, destination->Num_lines));
+	for (row = 0; 
+		row < (min(origin->Num_lines, destination->Num_lines)); 
 			row++)
 	{
-		for (column = 0;
-		    column < (min(origin->Num_cols, destination->Num_cols));
+		for (column = 0; 
+		    column < (min(origin->Num_cols, destination->Num_cols)); 
 			column++)
 		{
 			dest->row[column] = orig->row[column];
@@ -733,9 +731,9 @@ WINDOW *origin, *destination;
 	destination->SCROLL_CLEAR = origin->SCROLL_CLEAR;
 }
 
-void
+void 
 reinitscr(foo)
-int foo;
+int foo; 
 {
 	WINDOW *local_virt;
 	WINDOW *local_std;
@@ -745,11 +743,11 @@ int foo;
 #ifdef TIOCGWINSZ
 	if (ioctl(0, TIOCGWINSZ, &ws) >= 0)
 	{
-		if (ws.ws_row == LINES && ws.ws_col == COLS)
+		if (ws.ws_row == LINES && ws.ws_col == COLS) 
 			return;
-		if (ws.ws_row > 0)
+		if (ws.ws_row > 0) 
 			LINES = ws.ws_row;
-		if (ws.ws_col > 0)
+		if (ws.ws_col > 0) 
 			COLS = ws.ws_col;
 	}
 #endif /* TIOCGWINSZ */
@@ -771,7 +769,7 @@ int foo;
 }
 #endif /* SIGWINCH */
 
-void
+void 
 initscr()		/* initialize terminal for operations	*/
 {
 	int value;
@@ -905,7 +903,6 @@ printf("starting initscr \n");fflush(stdout);
 	}
 	fprintf(stderr, "TERM is %s\n", TERMINAL_TYPE);
 #ifndef CAP
-
 	Fildes = -1;
 	TERM_PATH = getenv("TERMINFO");
 	if (TERM_PATH != NULL)
@@ -944,7 +941,7 @@ printf("starting initscr \n");fflush(stdout);
 		TERM_INFO = INFO_PARSE();
 #else
 	/*
-	 |	termcap information can be in the TERMCAP env variable, if so
+	 |	termcap information can be in the TERMCAP env variable, if so 
 	 |	use that, otherwise check the /etc/termcap file
 	 */
 	if ((pointer = Term_File_name = getenv("TERMCAP")) != NULL)
@@ -961,11 +958,11 @@ printf("starting initscr \n");fflush(stdout);
 		printf("unable to open %s file \n", TERMCAP);
 		exit(0);
 	}
- 	for (value = 0; value < 1024; value++)
+ 	for (value = 0; value < 1024; value++)	
 		String_table[value] = NULL;
-	for (value = 0; value < 128; value++)
+	for (value = 0; value < 128; value++)	
 		Booleans[value] = 0;
-	for (value = 0; value < 128; value++)
+	for (value = 0; value < 128; value++)	
 		Numbers[value] = 0;
 	Data_Line = malloc(512);
 	if (pointer && *pointer != '/')
@@ -979,7 +976,7 @@ printf("starting initscr \n");fflush(stdout);
 		CAP_PARSE();
 	}
 #endif
-	if (String_table[pc__] == NULL)
+	if (String_table[pc__] == NULL) 
 		String_table[pc__] = "\0";
 	if ((String_table[cm__] == NULL) || (Booleans[hc__]))
 	{
@@ -1025,7 +1022,7 @@ printf("starting initscr \n");fflush(stdout);
 
 #ifdef SIGWINCH
 	/*
-	 |	reset size of windows and LINES and COLS if term window
+	 |	reset size of windows and LINES and COLS if term window 
 	 |	changes size
 	 */
 	signal(SIGWINCH, reinitscr);
@@ -1035,14 +1032,14 @@ printf("starting initscr \n");fflush(stdout);
 	 |	check if scrolling is available
 	 */
 
-	nc_scrolling_ability = ((String_table[al__] != NULL) &&
-				(String_table[dl__])) || ((String_table[cs__])
+	nc_scrolling_ability = ((String_table[al__] != NULL) && 
+				(String_table[dl__])) || ((String_table[cs__]) 
 				&& (String_table[sr__]));
 
 }
 
 #ifndef CAP
-int
+int 
 Get_int()		/* get a two-byte integer from the terminfo file */
 {
 	int High_byte;
@@ -1063,7 +1060,7 @@ Get_int()		/* get a two-byte integer from the terminfo file */
 		return(Low_byte + (High_byte * 256));
 }
 
-int
+int 
 INFO_PARSE()		/* parse off the data in the terminfo data file	*/
 {
 	int offset;
@@ -1146,7 +1143,7 @@ INFO_PARSE()		/* parse off the data in the terminfo data file	*/
 }
 #endif		/* ifndef CAP	*/
 
-int
+int 
 AtoI()		/* convert ascii text to integers	*/
 {
 	int Temp;
@@ -1160,7 +1157,7 @@ AtoI()		/* convert ascii text to integers	*/
 	return(Temp);
 }
 
-void
+void 
 Key_Get()		/* create linked list with all key sequences obtained from terminal database	*/
 {
 	int Counter;
@@ -1203,13 +1200,13 @@ Key_Get()		/* create linked list with all key sequences obtained from terminal d
 				Max_Key_len = Klen;
 			/*
 			 |  Some terminal types accept keystrokes of the form
-			 |  \E[A and \EOA, substituting '[' for 'O'.  Make a
-			 |  duplicate of such key strings (since the
-			 |  database will only have one version) so new_curse
+			 |  \E[A and \EOA, substituting '[' for 'O'.  Make a 
+			 |  duplicate of such key strings (since the 
+			 |  database will only have one version) so new_curse 
 			 |  can understand both.
 			 */
-			if ((Spoint->element->length > 1) &&
-			    ((String_table[key_def][1] == '[') ||
+			if ((Spoint->element->length > 1) && 
+			    ((String_table[key_def][1] == '[') || 
 			     (String_table[key_def][1] == 'O')))
 			{
 				Spoint->next = (struct KEY_STACK *) malloc(sizeof(struct KEY_STACK));
@@ -1223,7 +1220,7 @@ Key_Get()		/* create linked list with all key sequences obtained from terminal d
 				Klen = strlen(Spoint->element->string);
 				if (Klen > Max_Key_len)
 					Max_Key_len = Klen;
-
+			
 				if (String_table[key_def][1] == '[')
 					Spoint->element->string[1] = 'O';
 				else
@@ -1343,7 +1340,7 @@ char *param;
 	return(param);
 }
 
-int
+int 
 tc_Get_int(param)		/* read the integer			*/
 int param;
 {
@@ -1365,7 +1362,7 @@ int param;
 	return(param);
 }
 
-void
+void 
 Find_term()		/* find terminal description in termcap file	*/
 {
 	char *Name;
@@ -1402,7 +1399,7 @@ Find_term()		/* find terminal description in termcap file	*/
 	}
 }
 
-void
+void 
 CAP_PARSE()		/* parse off the data in the termcap data file	*/
 {
 	int offset;
@@ -1511,7 +1508,7 @@ int start_l, start_c;	/* starting line and column to be inwindow	*/
 	Ntemp->first_line = temp_screen = Screenalloc(cols);
 	Ntemp->first_line->number = 0;
 	Ntemp->line_array = (struct _line **) malloc(LINES * sizeof(struct _line *));
-
+	
 	Ntemp->line_array[0] = Ntemp->first_line;
 
 	for (i = 1; i < lines; i++)
@@ -1528,7 +1525,7 @@ int start_l, start_c;	/* starting line and column to be inwindow	*/
 }
 
 #ifdef CAP
-void
+void 
 Cap_Out(string, p_list, place)	/* interpret the output string if necessary */
 char *string;
 int p_list[];			/* stack of values	*/
@@ -1562,7 +1559,7 @@ int place;			/* place keeper of top of stack	*/
 		if (*Otemp == '%')
 		{
 			Otemp++;
-			if ((*Otemp == 'd') || (*Otemp == '2') || (*Otemp == '3') || (*Otemp == '.') || (*Otemp == '+'))
+			if ((*Otemp == 'd') || (*Otemp == '2') || (*Otemp == '3') || (*Otemp == '.') || (*Otemp == '+')) 
 			{
 				if (*Otemp == 'd')
 				 	printf("%d", p1);
@@ -1644,7 +1641,7 @@ int place;			/* place keeper of top of stack	*/
 	int p[10];
 	int variable[27];
 
-int
+int 
 Operation(Temp_Stack, place)	/* handle conditional operations	*/
 int Temp_Stack[];
 int place;
@@ -1829,7 +1826,7 @@ int place;
 	return(place);
 }
 
-void
+void 
 Info_Out(string, p_list, place)	/* interpret the output string if necessary */
 char *string;
 int p_list[];
@@ -1885,7 +1882,7 @@ int place;
 					while (EVAL)
 					{
 						/*
-						 |  find the end of the
+						 |  find the end of the 
 						 |  conditional statement
 						 */
 						while ((strncmp(Otemp, "%t", 2)) && (*Otemp != '\0'))
@@ -1903,7 +1900,7 @@ int place;
 						if ((Cond_place > 0) && (Cond_Stack[Cond_place-1]))
 						{
 							/*
-							 |  end conditional
+							 |  end conditional 
 							 |  parsing
 							 */
 							EVAL = FALSE;
@@ -1913,7 +1910,7 @@ int place;
 						else	/* condition is false */
 						{
 							/*
-							 |  find 'else' or end
+							 |  find 'else' or end 
 							 |  of if statement
 							 */
 							while ((strncmp(Otemp, "%e", 2)) && (strncmp(Otemp, "%;", 2)) && (*Otemp != '\0'))
@@ -1942,20 +1939,20 @@ int place;
 								}
 								/*
 								 |  if end of if found,
-								 |  set up to parse
+								 |  set up to parse 
 								 |  info
 								 */
 								else if (!strncmp(tchar, "%;", 2))
 									EVAL = FALSE;
 								/*
-								 |  otherwise, check
-								 |  conditional in
+								 |  otherwise, check 
+								 |  conditional in 
 								 |  'else'
 								 */
 							}
 							/*
 							 |  if end of if found,
-							 |  get out of if
+							 |  get out of if 
 							 |  statement
 							 */
 							else if ((*Otemp != '\0') && (!strncmp(Otemp, "%;", 2)))
@@ -2024,7 +2021,7 @@ int place;
 }
 #endif
 
-void
+void 
 wmove(window, row, column)	/* move cursor to indicated position in window */
 WINDOW *window;
 int row, column;
@@ -2036,7 +2033,7 @@ int row, column;
 	}
 }
 
-void
+void 
 clear_line(line, column, cols)
 struct _line *line;
 int column;
@@ -2058,7 +2055,7 @@ int cols;
 	line->changed = TRUE;
 }
 
-void
+void 
 werase(window)			/* clear the specified window		*/
 WINDOW *window;
 {
@@ -2071,7 +2068,7 @@ WINDOW *window;
 		clear_line(tmp, 0, window->Num_cols);
 }
 
-void
+void 
 wclrtoeol(window)	/* erase from current cursor position to end of line */
 WINDOW *window;
 {
@@ -2086,7 +2083,7 @@ WINDOW *window;
 	clear_line(tmp, column, window->Num_cols);
 }
 
-void
+void 
 wrefresh(window)		/* flush all previous output		*/
 WINDOW *window;
 {
@@ -2125,14 +2122,14 @@ WINDOW *window;
 	fflush(stdout);
 }
 
-void
+void 
 touchwin(window)
 WINDOW *window;
 {
 	struct _line *user_line;
 	int line_counter = 0;
 
-	for (line_counter = 0, user_line = window->first_line;
+	for (line_counter = 0, user_line = window->first_line; 
 		line_counter < window->Num_lines; line_counter++)
 	{
 		user_line->changed = TRUE;
@@ -2140,7 +2137,7 @@ WINDOW *window;
 	window->SCROLL_CLEAR = TRUE;
 }
 
-void
+void 
 wnoutrefresh(window)
 WINDOW *window;
 {
@@ -2166,23 +2163,23 @@ WINDOW *window;
 		virtual_line = virtual_line->next_screen;
 	}
 	for (line_counter = 0; (line_counter < window->Num_lines)
-		&& ((line_counter + window->SR) < virtual_scr->Num_lines);
+		&& ((line_counter + window->SR) < virtual_scr->Num_lines); 
 			line_counter++)
 	{
 		if ((last_window_refreshed != window) || (user_line->changed) || ((SCROLL | CLEAR) & window->SCROLL_CLEAR))
 		{
-			for (user_col = 0, virt_col = window->SC;
-				(virt_col < virtual_scr->Num_cols)
-				  && (user_col < user_line->last_char);
+			for (user_col = 0, virt_col = window->SC; 
+				(virt_col < virtual_scr->Num_cols) 
+				  && (user_col < user_line->last_char); 
 				  	virt_col++, user_col++)
 			{
 				virtual_line->row[virt_col] = user_line->row[user_col];
 				virtual_line->attributes[virt_col] = user_line->attributes[user_col];
 			}
-			for (user_col = user_line->last_char,
-			     virt_col = window->SC + user_line->last_char;
-				(virt_col < virtual_scr->Num_cols)
-				  && (user_col < window->Num_cols);
+			for (user_col = user_line->last_char, 
+			     virt_col = window->SC + user_line->last_char; 
+				(virt_col < virtual_scr->Num_cols) 
+				  && (user_col < window->Num_cols); 
 				  	virt_col++, user_col++)
 			{
 				virtual_line->row[virt_col] = ' ';
@@ -2195,8 +2192,8 @@ WINDOW *window;
 			{
 				if (virtual_line->row[virtual_line->last_char] == '\0')
 					virtual_line->row[virtual_line->last_char] = ' ';
-				virtual_line->last_char =
-					min(virtual_scr->Num_cols,
+				virtual_line->last_char = 
+					min(virtual_scr->Num_cols, 
 					  (user_line->last_char + window->SC));
 			}
 		}
@@ -2212,12 +2209,12 @@ WINDOW *window;
 	last_window_refreshed = window;
 }
 
-void
+void 
 flushinp()			/* flush input				*/
 {
 }
 
-void
+void 
 ungetch(c)			/* push a character back on input	*/
 int c;
 {
@@ -2226,7 +2223,7 @@ int c;
 }
 
 #ifdef BSD_SELECT
-int
+int 
 timed_getchar()
 {
 	struct timeval tv;
@@ -2249,7 +2246,7 @@ timed_getchar()
 	 */
 
 	if (ret_val <= 0)
-	{
+	{ 
 		Time_Out = TRUE;
 		return(-1);
 	}
@@ -2258,7 +2255,7 @@ timed_getchar()
 }
 #endif
 
-int
+int 
 wgetch(window)			/* get character from specified window	*/
 WINDOW *window;
 {
@@ -2275,7 +2272,7 @@ WINDOW *window;
 		in_value = ((bufp > 0) ? in_buff[--bufp] : read(0, &temp, 1)? temp : -1);
 #else /* BSD_SELECT */
 #ifdef SYS5
-	in_value = ((bufp > 0) ? in_buff[--bufp] :
+	in_value = ((bufp > 0) ? in_buff[--bufp] : 
 					(read(0, &temp, 1)> 0) ? temp : -1);
 #else /* SYS5 */
 	if (Noblock)
@@ -2294,10 +2291,10 @@ WINDOW *window;
 #endif /* SYS5 */
 #endif /* BSD_SELECT */
 
-	if (in_value != -1)
+	if (in_value != -1) 
 	{
 		in_value &= 0xff;
-		if ((Parity) && (Num_bits < 8))
+		if ((Parity) && (Num_bits < 8))	
 				/* strip eighth bit if parity in use */
 		in_value &= 0177;
 	}
@@ -2313,7 +2310,7 @@ WINDOW *window;
 }
 
 #ifndef BSD_SELECT
-void
+void 
 Clear(arg)		/* notify that time out has occurred	*/
 int arg;
 {
@@ -2325,7 +2322,7 @@ fflush(stderr);
 }
 #endif /* BSD_SELECT */
 
-int
+int 
 Get_key(first_char)			/* try to decode key sequence	*/
 int first_char;				/* first character of sequence	*/
 {
@@ -2401,7 +2398,7 @@ fflush(stderr);
 	{
 		while (Count > 1)
 		{
-			if ((string[--Count] != -1) &&
+			if ((string[--Count] != -1) && 
 					((unsigned char) (string[Count]) != 255))
 			{
 #ifdef DIAG
@@ -2414,7 +2411,7 @@ fprintf(stderr, "ungetting character %d\n", string[Count]);fflush(stdout);
 	}
 }
 
-void
+void 
 waddch(window, c)	/* output the character in the specified window	*/
 WINDOW *window;
 int c;
@@ -2492,7 +2489,7 @@ int c;
 	window->SCROLL_CLEAR = CHANGE;
 }
 
-void
+void 
 winsertln(window)	/* insert a blank line into the specified window */
 WINDOW *window;
 {
@@ -2533,7 +2530,7 @@ WINDOW *window;
 	if (window->LY == 0)
 		window->first_line = tmp1;
 
-	for (row = 0, tmp1 = window->first_line;
+	for (row = 0, tmp1 = window->first_line; 
 		row < window->Num_lines; row++)
 	{
 		window->line_array[row] = tmp1;
@@ -2541,7 +2538,7 @@ WINDOW *window;
 	}
 }
 
-void
+void 
 wdeleteln(window)	/* delete a line in the specified window */
 WINDOW *window;
 {
@@ -2595,7 +2592,7 @@ WINDOW *window;
 	}
 }
 
-void
+void 
 wclrtobot(window)	/* delete from current position to end of the window */
 WINDOW *window;
 {
@@ -2616,7 +2613,7 @@ WINDOW *window;
 	wmove(window, row, column);
 }
 
-void
+void 
 wstandout(window)	/* begin standout mode in window	*/
 WINDOW *window;
 {
@@ -2624,14 +2621,14 @@ WINDOW *window;
 		window->Attrib |= A_STANDOUT;
 }
 
-void
+void 
 wstandend(window)	/* end standout mode in window	*/
 WINDOW *window;
 {
 	window->Attrib &= ~A_STANDOUT;
 }
 
-void
+void 
 waddstr(window, string)	/* write 'string' in window	*/
 WINDOW *window;
 char *string;
@@ -2642,7 +2639,7 @@ char *string;
 		waddch(window, *wstring);
 }
 
-void
+void 
 clearok(window, flag)	/* erase screen and redraw at next refresh	*/
 WINDOW *window;
 int flag;
@@ -2651,7 +2648,7 @@ int flag;
 }
 
 
-void
+void 
 echo()			/* turn on echoing				*/
 {
 	int value;
@@ -2665,7 +2662,7 @@ echo()			/* turn on echoing				*/
 #endif
 }
 
-void
+void 
 noecho()		/* turn off echoing				*/
 {
 	int value;
@@ -2679,7 +2676,7 @@ noecho()		/* turn off echoing				*/
 #endif
 }
 
-void
+void 
 raw()			/* set to read characters immediately		*/
 {
 	int value;
@@ -2707,7 +2704,7 @@ raw()			/* set to read characters immediately		*/
 #endif
 }
 
-void
+void 
 noraw()			/* set to normal character read mode		*/
 {
 	int value;
@@ -2727,7 +2724,7 @@ noraw()			/* set to normal character read mode		*/
 #endif
 }
 
-void
+void 
 nl()
 {
 	int value;
@@ -2738,7 +2735,7 @@ nl()
 #endif
 }
 
-void
+void 
 nonl()
 {
 	int value;
@@ -2750,36 +2747,36 @@ nonl()
 #endif
 }
 
-void
+void 
 saveterm()
 {
 }
 
-void
+void 
 fixterm()
 {
 }
 
-void
+void 
 resetterm()
 {
 }
 
-void
+void 
 nodelay(window, flag)
 WINDOW *window;
 int flag;
 {
 }
 
-void
+void 
 idlok(window, flag)
 WINDOW *window;
 int flag;
 {
 }
 
-void
+void 
 keypad(window, flag)
 WINDOW *window;
 int flag;
@@ -2790,7 +2787,7 @@ int flag;
 		String_Out(String_table[ke__], NULL, 0);
 }
 
-void
+void 
 savetty()		/* save current tty stats			*/
 {
 	int value;
@@ -2802,7 +2799,7 @@ savetty()		/* save current tty stats			*/
 #endif
 }
 
-void
+void 
 resetty()		/* restore previous tty stats			*/
 {
 	int value;
@@ -2814,7 +2811,7 @@ resetty()		/* restore previous tty stats			*/
 #endif
 }
 
-void
+void 
 endwin()		/* end windows					*/
 {
 	keypad(stdscr, FALSE);
@@ -2831,7 +2828,7 @@ endwin()		/* end windows					*/
 #endif
 }
 
-void
+void 
 delwin(window)		/* delete the window structure			*/
 WINDOW *window;
 {
@@ -2856,11 +2853,11 @@ WINDOW *window;
 }
 
 #ifndef __STDC__
-void
+void 
 wprintw(va_alist)
 va_dcl
 #else /* __STDC__ */
-void
+void 
 wprintw(WINDOW *window, const char *format, ...)
 #endif /* __STDC__ */
 {
@@ -2931,7 +2928,7 @@ wprintw(WINDOW *window, const char *format, ...)
 #endif /* __STDC__ */
 }
 
-void
+void 
 iout(window, value)	/* output characters		*/
 WINDOW *window;
 int value;
@@ -2943,7 +2940,7 @@ int value;
 	waddch(window, ((value % 10) + '0'));
 }
 
-int
+int 
 Comp_line(line1, line2)		/* compare lines	*/
 struct _line *line1;
 struct _line *line2;
@@ -3106,7 +3103,7 @@ WINDOW *window;
 	return(tmp2);
 }
 
-void
+void 
 CLEAR_TO_EOL(window, row, column)
 WINDOW *window;
 int row, column;
@@ -3142,7 +3139,7 @@ int row, column;
 	}
 }
 
-int
+int 
 check_delete(window, line, offset, pointer_new, pointer_old)
 WINDOW *window;
 int line, offset;
@@ -3156,7 +3153,7 @@ struct _line *pointer_new, *pointer_old;
 	char *new_lin;
 	char *old_att;
 	char *new_att;
-
+	
 	changed = FALSE;
 	new_lin = pointer_new->row;
 	new_att = pointer_new->attributes;
@@ -3190,11 +3187,11 @@ struct _line *pointer_new, *pointer_old;
 }
 
 /*
- |	Check if characters were inserted in the middle of a line, and if
+ |	Check if characters were inserted in the middle of a line, and if 
  |	so, insert them.
  */
 
-int
+int 
 check_insert(window, line, offset, pointer_new, pointer_old)
 WINDOW *window;
 int line, offset;
@@ -3225,7 +3222,7 @@ struct _line *pointer_new, *pointer_old;
 		while ((old_lin[end_old+k] == new_lin[end_new+k]) && (old_att[end_old+k] == new_att[end_new+k]) && (new_lin[end_new+k] != '\0') && (old_lin[end_old+k] != '\0') && (k < 10))
 			k++;
 		/*
-		 |  check for commonality between rest of lines (are the old
+		 |  check for commonality between rest of lines (are the old 
 		 |  and new lines the same, except for a chunk in the middle?)
 		 |  if the rest of the lines are common, do not insert text
 		 */
@@ -3260,7 +3257,7 @@ struct _line *pointer_new, *pointer_old;
 	return(changed);
 }
 
-void
+void 
 doupdate()
 {
 	WINDOW *window;
@@ -3340,7 +3337,7 @@ doupdate()
 	diff = FALSE;
 	top_of_win = curscr->first_line;
 
-	for (from_top = 0, curr = top_of_win, virt = window->first_line;
+	for (from_top = 0, curr = top_of_win, virt = window->first_line; 
 			from_top < window->Num_lines; from_top++)
 	{
 		virtual_lines[from_top] = TRUE;
@@ -3364,7 +3361,7 @@ doupdate()
 	{
 		last_same = -1;
 		changed = FALSE;
-		for (first_same = window->Num_lines;
+		for (first_same = window->Num_lines; 
 		    (first_same > from_top) && (virtual_lines[first_same - 1]);
 		     first_same--)
 			;
@@ -3378,8 +3375,8 @@ doupdate()
 
 			if (from_top >= last_same)
 			{
-				for (last_same = from_top;
-				     (last_same < window->Num_lines) &&
+				for (last_same = from_top; 
+				     (last_same < window->Num_lines) && 
 				     (virtual_lines[last_same] == FALSE);
 				      last_same++)
 					;
@@ -3390,25 +3387,25 @@ doupdate()
 				/*
 				 |	check for lines deleted (scroll up)
 				 */
-				for (tmp_ft = from_top+1, old = curr->next_screen;
-					((window->scroll_up) && (diff) &&
-					(tmp_ft < last_same) &&
+				for (tmp_ft = from_top+1, old = curr->next_screen; 
+					((window->scroll_up) && (diff) && 
+					(tmp_ft < last_same) && 
 					(!virtual_lines[tmp_ft]));
 						tmp_ft++)
 				{
 					if ((Comp_line(old, virt) == -1) && (!virtual_lines[from_top]))
 					{
 						/*
-						 |	Find the bottom of the
-						 |	area that should be
+						 |	Find the bottom of the 
+						 |	area that should be 
 						 |	scrolled.
 						 */
-						for (bottom = tmp_ft, old1 = old,
+						for (bottom = tmp_ft, old1 = old, 
 						     new1 = virt, count1 = 0;
-							(bottom < window->Num_lines) &&
+							(bottom < window->Num_lines) && 
 								(Comp_line(old1, new1) <= 0);
-								bottom++, old1 = old1->next_screen,
-								new1 = new1->next_screen,
+								bottom++, old1 = old1->next_screen, 
+								new1 = new1->next_screen, 
 								count1++)
 							;
 						if (count1 > 3)
@@ -3439,8 +3436,8 @@ doupdate()
 							curr = top_of_win;
 							for (offset = 0; offset < from_top; offset++)
 								curr = curr->next_screen;
-							for (offset = from_top, old=curr, new=virt;
-							   offset < window->Num_lines;
+							for (offset = from_top, old=curr, new=virt; 
+							   offset < window->Num_lines; 
 							   old=old->next_screen, new=new->next_screen,
 							   offset++)
 							{
@@ -3455,25 +3452,25 @@ doupdate()
 				/*
 				 |	check for lines inserted (scroll down)
 				 */
-				for (tmp_ft = from_top-1, old = curr->prev_screen;
-					((window->scroll_down) && (tmp_ft >= 0) &&
-					(diff) &&
-					(!virtual_lines[tmp_ft]));
+				for (tmp_ft = from_top-1, old = curr->prev_screen; 
+					((window->scroll_down) && (tmp_ft >= 0) && 
+					(diff) && 
+					(!virtual_lines[tmp_ft])); 
 					  tmp_ft--)
 				{
 					if (Comp_line(old, virt) == -1)
 					{
 						/*
-						 |	Find the bottom of the
-						 |	area that should be
+						 |	Find the bottom of the 
+						 |	area that should be 
 						 |	scrolled.
 						 */
-						for (bottom = from_top, old1 = old,
+						for (bottom = from_top, old1 = old, 
 						     new1 = virt, count1 = 0;
-							(bottom < window->Num_lines) &&
+							(bottom < window->Num_lines) && 
 								(Comp_line(old1, new1) <= 0);
-								bottom++, old1 = old1->next_screen,
-								new1 = new1->next_screen,
+								bottom++, old1 = old1->next_screen, 
+								new1 = new1->next_screen, 
 								count1++)
 							;
 						if (count1 > 3)
@@ -3504,8 +3501,8 @@ doupdate()
 							curr = top_of_win;
 							for (offset = 0; offset < from_top; offset++)
 								curr = curr->next_screen;
-							for (offset = from_top, old=curr, new=virt;
-							   offset < window->Num_lines;
+							for (offset = from_top, old=curr, new=virt; 
+							   offset < window->Num_lines; 
 							   old=old->next_screen, new=new->next_screen,
 							   offset++)
 							{
@@ -3526,7 +3523,7 @@ doupdate()
 
 
 	/*
-	 |	Scrolling done, now need to insert, delete, or modify text
+	 |	Scrolling done, now need to insert, delete, or modify text 
 	 |	within lines.
 	 */
 
@@ -3537,13 +3534,13 @@ doupdate()
 	{
 
 		/*
-		 |	If either 'insert mode' or 'insert char' are
-		 |	available, enter the following 'if' statement,
+		 |	If either 'insert mode' or 'insert char' are 
+		 |	available, enter the following 'if' statement, 
 		 |	else, need to simply rewrite the contents of the line
 		 |	at the point where the contents of the line change.
 		 */
 
-		if (((String_table[ic__]) || (String_table[im__])) &&
+		if (((String_table[ic__]) || (String_table[im__])) && 
 		    (String_table[dc__]) && (curr->row[0] != '\0') &&
 		    (!NC_chinese))
 		{
@@ -3634,7 +3631,7 @@ doupdate()
 					j++;
 
 				/*
-				 |	if previous character is an eight bit
+				 |	if previous character is an eight bit 
 				 |	char, start redraw from that character
 				 */
 
@@ -3668,7 +3665,7 @@ doupdate()
 	Position(window, window->LY, window->LX);
 }
 
-void
+void 
 Position(window, row, col)	/* position the cursor for output on the screen	*/
 WINDOW *window;
 int row;
@@ -3684,7 +3681,7 @@ int col;
 	pos_column = col + window->SC;
 	if ((pos_row != Curr_y) || (pos_column != Curr_x))
 	{
-		if (String_table[cm__] != NULL) /* && (row < window->Num_lines) && (column < window->Num_cols))*/
+		if (String_table[cm__] != NULL) /* && (row < window->Num_lines) && (column < window->Num_cols))*/ 
 		{
 			place = 0;
 			list[place++] = pos_column;
@@ -3698,7 +3695,7 @@ int col;
 	}
 }
 
-void
+void 
 Char_del(line, attrib, offset, maxlen)	/* delete chars from line	*/
 char *line;
 char *attrib;
@@ -3715,7 +3712,7 @@ int maxlen;
 	String_Out(String_table[dc__], NULL, 0);
 }
 
-void
+void 
 Char_ins(line, attrib, newc, newatt, offset, maxlen)	/* insert chars in line	*/
 char *line;
 char *attrib;
@@ -3739,7 +3736,7 @@ int maxlen;
 	Char_out(newc, newatt, line, attrib, offset);
 }
 
-void
+void 
 attribute_on()
 {
 	if (String_table[sa__])
@@ -3751,7 +3748,7 @@ attribute_on()
 		String_Out(String_table[so__], NULL, 0);
 }
 
-void
+void 
 attribute_off()
 {
 	if (String_table[me__])
@@ -3765,7 +3762,7 @@ attribute_off()
 		String_Out(String_table[se__], NULL, 0);
 }
 
-void
+void 
 Char_out(newc, newatt, line, attrib, offset)	/* output character with proper attribute	*/
 char newc;
 char newatt;
@@ -3802,23 +3799,22 @@ int offset;
 
 /*
  |
- |	The two routines that follow, nc_setattrib(), nc_clearattrib(), are
- |	hacks that notify new_curse to handle characters that have the high
+ |	The two routines that follow, nc_setattrib(), nc_clearattrib(), are 
+ |	hacks that notify new_curse to handle characters that have the high 
  |	bit set as the first of two bytes of a multi-byte string.
  |
  */
 
-void
+void 
 nc_setattrib(flag)
 int flag;
 {
 	nc_attributes |= flag;
 }
 
-void
+void 
 nc_clearattrib(flag)
 int flag;
 {
 	nc_attributes &= ~flag;
 }
-

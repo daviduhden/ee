@@ -252,4 +252,3 @@ extern void Char_out P_((int newc, int newatt, char *line, char *attrib, int off
 extern void nc_setattrib P_((int));
 extern void nc_clearattrib P_((int));
 #undef P_
-
