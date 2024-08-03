@@ -1,6 +1,6 @@
 # Easy Editor (ee)
 
-The editor **ee** (easy editor) is intended to be a simple, easy-to-use terminal-based screen-oriented editor that requires no instruction to use. Its primary use would be for people who are new to computers or who use computers only for things like e-mail.
+The editor **ee** (easy editor) is intended to be a simple, easy-to-use terminal-based screen-oriented editor that requires no instruction to use. Its primary use would be for people who are new to computers or who use computers only for things like e-mail. Any contribution is highly appreciated.
 
 ## Simplified Interface
 
