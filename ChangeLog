@@ -4,7 +4,7 @@ version 1.5.1 (8/3/2024)
 - fixed the use of uninitialised pointer in ispell_op
 - removed locally added __FBSDID
 - removed two set but unused variables
-- use C89 function definitions
+- added C89 function definitions
 - removed function prototype for main
 - droped P_() macro used for pre-C89 compatibility
 - added make deinstall and mkdir ${PREFIX}/bin
